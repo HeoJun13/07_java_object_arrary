@@ -81,8 +81,17 @@ public class ObjectArrayEx08_필기2 {
 					
 					int size = studentList[select].subjects.length;
 					
+					Subject1[] temp = studentList[select].subjects;
+					studentList[select].subjects = new Subject1[size + 1];
 					
+					for (int i = 0; i < size; i++) {
+						studentList[select].subjects[i] = temp[i];
+					}
 					
+					studentList[select].subjects[size] = new Subject1();
+					studentList[select].subjects[size].name = subject;
+					
+					temp = null;
 					
 				}
 			}
