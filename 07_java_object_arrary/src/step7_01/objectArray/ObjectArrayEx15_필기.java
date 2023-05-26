@@ -14,17 +14,16 @@ class StudentOEC {
 	
 }
 
-class StudentController {
+class StudentController{
 	 ArrayList<StudentOEC> List = new ArrayList<StudentOEC>();
 	 
 	 void addStudent(StudentOEC studentOEC) {
 		 List.add(studentOEC);
 	 }
 	 
-	 StudentOEC removeStudent(int index) {
+	 void removeStudent(int index) {
 		 StudentOEC deletedObj = List.get(index);
 		 List.remove(index);
-		 return.deletedObj;
 	 }
 }
 
