@@ -14,7 +14,7 @@ class StudentOEC {
 	
 }
 
-class StudentController{
+class fdsfa{
 	 ArrayList<StudentOEC> List = new ArrayList<StudentOEC>();
 	 
 	 void addStudent(StudentOEC studentOEC) {
